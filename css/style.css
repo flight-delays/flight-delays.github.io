@@ -1,0 +1,553 @@
+/* Stylesheet by Xinyi Liu, 2017 */
+.loader {
+    display: block;
+    position: absolute;
+	z-index:2932939239293923;
+    left:55%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+    .loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    .loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+/*loader codes end*/
+
+.grayOut{
+	background-color:#333;
+	opacity:0.5;
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:100%;
+}
+
+span.OverviewBoxTitle{
+	/*position:relative;*/
+	/*left:28%;*/
+	text-align:center;
+	font-size: 25px;
+	font-weight:bold;
+}
+
+span a{
+	color:white;
+}
+
+.OverviewBox{
+	/*background-image:url('../img/boeing.jpg');*/
+	background:linear-gradient(#5fbfef,#519adb);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	padding:15px;
+	font-family:Gill Sans MT;
+	font-size:20px;
+	position:absolute;
+	/*z-index:2932939239293923;*/
+	top:30%;
+	left:30%;
+	width:50%;
+	height:32%;
+	border-radius:25px;
+}
+
+.OverviewButton{
+	/*position:relative;*/
+	/*top:65%;*/
+	/*left:38%;*/
+	width:100%;
+	height:10%;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.ContactBox{
+	background:linear-gradient(#5fbfef,#519adb);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	padding:15px;
+	font-family:Gill Sans MT;
+	/*font-size:20px;*/
+	position:absolute;
+	top:6%;
+	left:30%;
+	width:55%;
+	height:90%;
+	border-radius:25px;
+}
+
+.ContactButton{
+	position:relative;
+	top:-6%;
+	left:43%;
+	width:30%;
+	height:5%;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.TutorialBox{
+	background:linear-gradient(#5fbfef,#519adb);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	padding:15px;
+	font-family:Gill Sans MT;
+	/*font-size:20px;*/
+	position:absolute;
+	top:25%;
+	left:35%;
+	width:40%;
+	height:50%;
+	border-radius:25px;
+}
+
+.TutorialButton{
+	position:relative;
+	top:80%;
+	width:100%;
+	height:10%;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.footerDiv{
+	position:absolute;
+	top:15%;
+	margin-left:4%;
+	color:white;
+}
+
+.foot-button1{
+	cursor:pointer;
+}
+
+.navbar-brand{
+	position:absolute;
+	/*left:0.5%;*/
+}
+
+.navbar-default .navbar-brand{
+	font-family:Gill Sans MT;
+	font-size: 25px;
+	font-weight:bold;
+}
+
+.container1{
+	/*background:linear-gradient(#2b669a,#2F3034);*/
+	background:linear-gradient(#0a84c1,#2b669a);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.navbar-button{
+	font-family:Gill Sans MT;
+	font-size:20px;
+	position:absolute;
+	left:-60%;
+	cursor:pointer;
+}
+
+#navbar-list-group{
+	height:10%;
+	min-width: 100px !important;
+	width: 100px;
+	z-index:2932939239293923;
+	margin:0px;
+	padding:0px;
+}
+
+.container-footer{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:3%;
+	font-family:Gill Sans MT;
+	background:linear-gradient(#0a84c1,#2b669a);
+}
+
+.foot-button{
+	position:absolute;
+	color:black;
+	top:15%;
+	left:3%;
+	color:white;
+}
+
+.pull-middle{
+	position:absolute;
+	top:15%;
+	left:36%
+}
+
+.control-panel{
+	position:absolute;
+	width:19%;
+	height:100%;
+	left:0%;
+	background:linear-gradient(#5fbfef,#519adb);
+	/*background-color: white;*/
+	/*position: absolute;*/
+	/*z-index:1000000002383823;*/
+	/*top: 10%;*/
+	/*left: 100px;*/
+}
+
+.sexy_line{
+	display:block;
+    border:none;
+    color:#5fbfef;
+    height:1px;
+    background:#2b669a;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#2b669a), to(#5fbfef));
+}
+
+#Division1{
+	position:relative;
+	top:12%;
+}
+
+#Division2{
+	position:relative;
+	top:20%;
+}
+
+#Division3{
+	position:relative;
+	top:36%;
+}
+
+#Division4{
+	position:relative;
+	top:54%;
+}
+
+h3.title{
+	font-family:Gill Sans MT;
+	font-size:120%;
+	text-align:left;
+	/*padding-top:10px;*/
+}
+
+/*codes for styling contact window*/
+h3{
+	font-weight:bold;
+	text-align:center;
+}
+
+.Contact_Title{
+	position:absolute;
+	top:-1%;
+	left:10%;
+	font-family:Gill Sans MT;
+	font-size:100%;
+}
+/*
+.Author_Intro{
+	position:relative;
+	top:9%;	
+	left:80%;
+}
+*/
+.GeneralIntro1{
+	text-align:center;
+	font-size:18px;
+}
+
+#Division{
+	position:relative;
+	top:5.5%;
+}
+
+.ChrisPic{
+	border-radius:50%
+}
+
+.XinyiPic{
+	border-radius:50%;
+}
+
+.BeichenPic{
+	border-radius:50%;
+}
+
+.Author_Detail{
+	position:absolute;
+	top:10%;
+	left:50%;
+	font-family:Gill Sans MT;
+	font-size:100%;
+}
+
+p.tag{
+	position:relative;
+	font-family:Gill Sans MT;
+	font-size:25px;
+}
+
+p.description{
+	position:relative;
+	font-family:Gill Sans MT;
+	font-size:16px;
+}
+
+p.Describe{
+	font-family:Gill Sans MT;
+	color:black;
+	font-size:16px;
+}
+
+.team{
+	position:relative;
+	top:5%;
+	text-align:center;
+}
+
+.Chris{
+	position:relative;
+	left:-13%;
+	width:75%;
+	margin-top:6%;
+	margin-bottom:1%;
+}
+
+.Xinyi{
+	position:relative;
+	left:-13%;
+	width:75%;
+	margin-bottom:1%;
+}
+
+.Beichen{
+	position:relative;
+	left:-13%;
+	width:75%;
+}
+
+.ChrisDetails{
+	position:relative;
+	left:-20%;
+	width:80%;
+	margin-top:5%;
+	margin-bottom:24%;
+}
+
+.XinyiDetails{
+	position:relative;
+	left:-20%;
+	width:80%;
+	margin-bottom:23%;
+}
+
+.BeichenDetails{
+	position:relative;
+	left:-20%;
+	width:80%;
+}
+/*codes for contact window end*/
+
+.resetter{
+	cursor:pointer;
+	position:absolute;
+	border-radius:25px;
+	width:50;
+	height:50;
+}
+
+.hovered{
+	background:linear-gradient(#3a8ad1,#81cef4);
+	cursor: pointer;
+}
+
+.return_default1{
+	top:12%;
+	left:90%;
+}
+
+.return_default2{
+	top:22%;
+	left:90%;
+}
+
+.return_default3{
+	top:40%;
+	left:90%;
+}
+
+.return_default4{
+	top:60%;
+	left:90%;
+}
+
+#search-panel{
+	height:0%;
+	font-family:Gill Sans MT;
+	padding-left:20px;
+	padding-right:18px;
+	position:relative;
+	top:6%;
+}
+
+#proportion-panel{
+	height:0%;
+	font-family:Gill Sans MT;
+	padding-left:20px;
+	padding-right:20px;
+	position:relative;
+	top:12%;
+}
+
+#time-panel{
+	height:0%;
+	font-family:Gill Sans MT;
+	padding-left:20px;
+	padding-right:20px;
+	position:relative;
+	top:19%;
+}
+
+#delay-panel{
+	height:0%;
+	font-family:Gill Sans MT;
+	padding-left:20px;
+	padding-right:20px;
+	position:relative;
+	top:35%;
+}
+
+#airline-panel{
+	height:0%;
+	font-family:Gill Sans MT;
+	padding-left:20px;
+	padding-right:20px;
+	position:relative;
+	top:53%;
+}
+
+#checkboxAirline{
+	float:left;
+	width:50%;
+}
+
+#mapDiv{
+	position:absolute;
+	margin-bottom: 20px;
+	top:3%;
+	left:18%;
+	width:82%;
+	height:95%;
+}
+
+.map{
+	width:100%;
+	height:100%;
+}
+
+.states{
+    fill-opacity: 0;
+    stroke: #666666;
+    stroke-width: 0.5px;
+}
+
+.regions {
+    stroke:#fcfcfc;
+    stroke-width: 0.5px;
+    stroke-linecap: round;
+}
+
+#resultsFiltersDiv {
+  min-height: 100%;
+  margin-bottom: 20px;
+}
+
+#mapTitle {
+  margin-left: 15px;
+}
+
+.page-header {
+  margin-top: 65px;
+}
+
+.col-sm-4 {
+  float: left;
+}
+
+.col-sm-8 {
+  float: right;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.site-footer{
+	display:inline;
+	padding:0.5%;
+}
+
+.arc {
+    fill: none;
+    stroke: #252525;
+		stroke-opacity: 0.5;
+    stroke-linejoin: round;
+    cursor: pointer;
+}

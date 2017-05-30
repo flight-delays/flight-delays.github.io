@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<title>U.S. Delay Flight Tracker</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		
+		<!-- Custom styles for this project -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="lib/jRange/jquery.range.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/awesomplete.css">
+	</head>
+	
+	<body>		
+		<nav class="navbar navbar-default navbar-fixed-top col-md-13">
+			<div class="container1">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="glyphicon glyphicon-menu-hamburger" style="color:gray"></span>
+						<span class="menu" style="color:gray"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">U.S. Delay Flight Tracker</a>
+				</div>
+				<!--div class="navbar-button1">
+					<p>Make Your Itinerary Smart Today!<p>
+				</div-->
+				<div id="myNav" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="navbar-button menu-button1">About</a></li>
+						<li><a class="navbar-button menu-button2">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	  
+	<div class="container2">
+		<div class="row">
+			<div id="mapDiv" class="col-md-8 col-lg-10 col-sm-12"></div>
+		</div>
+		
+		<div class="navbar-panel control-panel col-md-4 col-lg-2 col-sm-12">
+			<div id="search-panel">
+				<h3 class="title">Search An Airport:</h3>
+				<div>
+					<input type="text" id="airport_search" placeholder="Search your destination airport (e.g. 'DEN')" style="width:100%">
+				</div>
+			</div>
+			
+			<hr id="Division1" class="sexy_line">
+			
+			<div id="proportion-panel">
+				<h3 class="title">Symbolize By:</h3>
+				<div>
+					<input type="radio" id="percentage" name="proportional_symbol" value=1 checked>
+					<label for="percentage">Percentage of Delay Flights</label>
+				</div>
+				<div>
+					<input type="radio" id="time" name="proportional_symbol" value=0>
+					<label for="time">Average Delay Time</label>
+				</div>
+				<div class="resetter return_default1" title="Reset">
+					<img src="img/return.png" width="20" height="20">
+				</div>
+			</div>
+			
+			<hr id="Division2" class="sexy_line">
+			
+			<div id="time-panel">
+				<h3 class="title">Year(s):</h3>
+				<div>
+					<input class="range-slider1" id="yearInput" type="hidden" value="2014,2015"/>
+				</div>
+				
+				<h3 class="title">Month(s):</h3>
+				<div>
+					<input class="range-slider2" id="monthInput" type="hidden" value="0,6"/>
+				</div>
+				
+				<h3 class="title">Day(s):</h3>
+				<div>
+					<input class="range-slider3" id="dayInput" type="hidden" value="1,4"/>
+				</div>
+				<div class="resetter return_default2" title="Reset">
+					<img src="img/return.png" width="20" height="20">
+				</div>
+			</div>
+			
+			<hr id="Division3" class="sexy_line">
+			
+			<div id="delay-panel">
+				<h3 class="title">Type(s) of Delay:</h3>
+				<div id="radioDelay">
+					<input type="radio" id="carrier" value="weather" name="delay">
+					<label for="carrier">Air Carrier</label><br>
+				
+					<input type="radio" id="weather" value="weather"  name="delay">
+					<label for="weather">Weather</label><br>
+				
+					<input type="radio" id="security" value="security" name="delay">
+					<label for="security">Security</label><br>
+				</div>
+				
+				<div id="radioDelay">
+					<input type="radio" id="aviation" value="nas" name="delay">
+					<label for="aviation">National Aviation System</label><br>
+				
+					<input type="radio" id="arriving_late" value="arriving_late" name="delay">
+					<label for="arriving_late">Aircraft Arriving Late</label><br>
+					
+					<input type="radio" id="all" name="delay" value="all" checked="checked">
+					<label for="arriving_late">Show All</label><br>
+				</div>
+				<div class="resetter return_default3" title="Reset">
+					<img src="img/return.png" width="20" height="20">
+				</div>
+			</div>
+			
+			<hr id="Division4" class="sexy_line">
+			
+			<div id="airline-panel">
+				<h3 class="title">Airline(s):</h3>
+				<div id="checkboxAirline">
+					<input type="checkbox" id="19930" name="airline" value="19930" checked="checked">
+					<label for="19930">Alaska</label><br>
+				
+					<input type="checkbox" id="19805" name="airline" value="19805" checked="checked">
+					<label for="19805">American</label><br>
+				
+					<input type="checkbox" id="19790" name="airline" value="19790" checked="checked">
+					<label for="19790">Delta</label><br>
+				
+					<input type="checkbox" id="20398" name="airline" value="20398" checked="checked">
+					<label for="20398">Envoy</label><br>
+				
+					<input type="checkbox" id="20366" name="airline" value="20366" checked="checked">
+					<label for="20366">ExpressJet</label><br>
+				
+					<input type="checkbox" id="20436" name="airline" value="20436" checked="checked">
+					<label for="20436">Frontier</label><br>
+				</div>
+				
+				<div id="checkboxAirline">
+					<input type="checkbox" id="20409" name="airline" value="20409" checked="checked">
+					<label for="20409">JetBlue</label><br>
+				
+					<input type="checkbox" id="20304" name="airline" value="20304" checked="checked">
+					<label for="20304">SkyWest</label><br>
+				
+					<input type="checkbox" id="19393" name="airline" value="19393" checked="checked">
+					<label for="19393">Southwest</label><br>
+				
+					<input type="checkbox" id="20416" name="airline" value="20416" checked="checked">
+					<label for="20416">Spirit</label><br>
+				
+					<input type="checkbox" id="19977" name="airline" value="19977" checked="checked">
+					<label for="19977">United</label><br>
+				
+					<input type="checkbox" id="21171" name="airline" value="21171" checked="checked">
+					<label for="21171">Virgin America</label><br>
+					
+					<input type="button" name="checkBtn" class="check" value="Uncheck All">
+				</div>
+				<div class="resetter return_default4" title="Reset">
+					<img src="img/return.png" width="20" height="20">
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<!-->codes for contact box<-->
+	<div class="ContactBox" style="display:none">
+		<div class="Contact_Title">
+			<h3 class="GeneralIntro">Team Members:</h3>
+			<div class="GeneralIntro1">We are a tiny team of three awesome humans aiming at providing you the smartest itinerary solutions.</div>
+		</div>
+		
+		<hr id="Division" class="sexy_line">
+
+		<div class="Author_Intro">
+			<div class="Chris team col-md-13">
+				<img class="ChrisPic" src="img/Chris.jpg">
+				<p class="Describe">Chris Scheele<br>Graduate in Geography<br>cjscheele@wisc.edu</p>
+			</div>
+			
+			<div class="Xinyi team col-md-13">
+				<img class="XinyiPic" src="img/Xinyi.jpg">
+				<p class="Describe">Xinyi Liu<br>Graduate in Geography<br>xliu636@wisc.edu</p>
+			</div>
+		
+			<div class="Beichen team col-md-13">
+				<img class="BeichenPic" src="img/Beichen.jpg">
+				<p class="Describe"><a href="https://beichentian-gis.github.io/" title="Click to view Beichen's webpage">Beichen Tian</a><br>GIS Certificate Student<br>btian8@wisc.edu</p>
+			</div>
+		</div>
+		
+		<div class="Author_Detail">
+			<div class="ChrisDetails col-md-13">
+				<p class="tag">Database Expert, Developer, Lead</p>
+				<p class="description">Chris processed back-end databases and oversaw the entire project to guarantee we are doing great. When Chris is not processing data, people can usually find him chasing tornados across American midwest.</p>
+			</div>
+			
+			<div class="XinyiDetails col-md-13">
+				<p class="tag">Geovisualization Specialist</p>
+				<p class="description">Xinyi created the interactive map and made sure the map is fully functional and responsive to users' demands. When Xinyi is not developing maps, people can usually find her walking around parks or shopping inside malls.</p>
+			</div>
+			
+			<div class="BeichenDetails col-md-13">
+				<p class="tag">Cartographer, Interface Designer</p>
+				<p class="description">Beichen designed the interface and map aesthetics to provide users an impressive user experience. When Beichen is not designing maps and interface, people can usually find him cooking delicious Asian food including dumplings, baos, buns, suhsi, and pokes.</p>
+			</div>
+		</div>
+	</div>	
+	
+	<!-->codes for tutorial box<-->
+	<div class="TutorialBox" style="display:none">
+		<div class="title">Please watch this video.</div>
+		<div class="video"></div>
+	</div>
+	
+	<footer class="site-footer col-md-13">
+		<div class="container-footer">
+			<div class="pull-middle"><font color="white">Version: 1.0&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Last updated: MM/DD/YY &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Best viewed on a large PC screen (e.g. Google Chrome, FireFox)</font></div>
+			<div class="footerDiv"><a class="foot-button1" style="color:white;">Tutorial</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="https://goo.gl/forms/EoBBpJzzDfpKwNXy2" target="_blank" style="color:white;">Bug Report</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+		</div>
+	</footer>
+		
+		<!--put your external script links here-->	
+		<script type="text/javascript" src="lib/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="lib/jRange/jquery.range.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/d3/d3.js"></script>
+		<script type="text/javascript" src="lib/d3-queue/d3-queue.js"></script>
+		<script type="text/javascript" src="lib/topojson/topojson.js"></script>
+		<script type="text/javascript" src="lib/d3-geo-projection/d3-geo-projection.js"></script>
+		<script type="text/javascript" src="lib/d3-extended.min.js"></script>
+		<script type="text/javascript" src="lib/awesomplete.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+	
+</html>
