@@ -1,0 +1,101 @@
+name,city,iata,lat,lng,rank
+Hartsfield Jackson Atlanta International,Atlanta,ATL,33.63669968,-84.42810059,1
+Los Angeles International,Los Angeles,LAX,33.94250107,-118.4079971,2
+Chicago O'Hare International,Chicago,ORD,41.97859955,-87.90480042,3
+Dallas Fort Worth International,Dallas-Fort Worth,DFW,32.89680099,-97.03800201,4
+John F Kennedy International,New York,JFK,40.63980103,-73.77890015,5
+Denver International,Denver,DEN,39.86169815,-104.6729965,6
+San Francisco International,San Francisco,SFO,37.61899948,-122.375,7
+Charlotte Douglas International,Charlotte,CLT,35.2140007,-80.94309998,8
+McCarran International,Las Vegas,LAS,36.08010101,-115.1520004,9
+Phoenix Sky Harbor International,Phoenix,PHX,33.43429947,-112.012001,10
+Miami International,Miami,MIA,25.79319954,-80.29060364,11
+George Bush Intercontinental Houston,Houston,IAH,29.9843998,-95.34140015,12
+Seattle Tacoma International,Seattle,SEA,47.44900131,-122.3089981,13
+Orlando International,Orlando,MCO,28.42939949,-81.30899811,14
+Newark Liberty International,Newark,EWR,40.69250107,-74.16870117,15
+Minneapolis-St Paul International/Wold-Chamberlain,Minneapolis,MSP,44.88199997,-93.22180176,16
+General Edward Lawrence Logan International,Boston,BOS,42.36429977,-71.00520325,17
+Detroit Metropolitan Wayne County,Detroit,DTW,42.21239853,-83.35340118,18
+Philadelphia International,Philadelphia,PHL,39.87189865,-75.2410965,19
+La Guardia,New York,LGA,40.77719879,-73.87259674,20
+Fort Lauderdale Hollywood International,Fort Lauderdale,FLL,26.07259941,-80.15270233,21
+Baltimore/Washington International Thurgood Marshall,Baltimore,BWI,39.17539978,-76.66829681,22
+Ronald Reagan Washington National,Washington,DCA,38.8521,-77.037697,23
+Chicago Midway International,Chicago,MDW,41.7859993,-87.75240326,24
+Salt Lake City International,Salt Lake City,SLC,40.78839874,-111.9779968,25
+Washington Dulles International,Washington,IAD,38.94449997,-77.45580292,26
+San Diego International,San Diego,SAN,32.73360062,-117.1900024,27
+Honolulu International,Honolulu,HNL,21.31870079,-157.9219971,28
+Tampa International,Tampa,TPA,27.97550011,-82.53320313,29
+Portland International,Portland,PDX,45.58869934,-122.5979996,30
+Dallas Love Field,Dallas,DAL,32.8470993,-96.85179901,31
+Lambert St Louis International,St. Louis,STL,38.74869919,-90.37000275,32
+William P Hobby,Houston,HOU,29.64539909,-95.27890015,33
+Austin Bergstrom International,Austin,AUS,30.19449997,-97.66989899,34
+Nashville International,Nashville,BNA,36.12450027,-86.67819977,35
+Metropolitan Oakland International,Oakland,OAK,37.72129822,-122.2210007,36
+Louis Armstrong New Orleans International,New Orleans,MSY,29.99340057,-90.25800323,37
+Kansas City International,Kansas City,MCI,39.2976,-94.713898,38
+Raleigh Durham International,Raleigh-Durham,RDU,35.87760162,-78.78749847,39
+John Wayne Airport-Orange County,Santa Ana,SNA,33.67570114,-117.8679962,40
+Norman Y. Mineta San Jose International,San Jose,SJC,37.36259842,-121.9290009,41
+Sacramento International,Sacramento,SMF,38.69540024,-121.5910034,42
+Southwest Florida International,Fort Myers,RSW,26.53619957,-81.75520325,43
+San Antonio International,San Antonio,SAT,29.53370094,-98.46980286,44
+Cleveland Hopkins International,Cleveland,CLE,41.4117012,-81.84980011,45
+Pittsburgh International,Pittsburgh,PIT,40.49150085,-80.23290253,46
+Indianapolis International,Indianapolis,IND,39.7173,-86.294403,47
+Port Columbus International,Columbus,CMH,39.9980011,-82.89189911,48
+General Mitchell International,Milwaukee,MKE,42.94720078,-87.89659882,49
+Kahului,Kahului,OGG,20.89859962,-156.4299927,50
+Palm Beach International,West Palm Beach,PBI,26.68320084,-80.09559631,51
+Cincinnati Northern Kentucky International,Cincinnati,CVG,39.04880142,-84.6678009,52
+Bradley International,Windsor Locks,BDL,41.93889999,-72.68319702,53
+Jacksonville International,Jacksonville,JAX,30.49410057,-81.68789673,54
+Ted Stevens Anchorage International,Anchorage,ANC,61.17440033,-149.9960022,55
+Buffalo Niagara International,Buffalo,BUF,42.94049835,-78.73220062,56
+Albuquerque International Sunport,Albuquerque,ABQ,35.04019928,-106.6090012,57
+Ontario International,Ontario,ONT,34.05599976,-117.6009979,58
+Eppley Airfield,Omaha,OMA,41.30319977,-95.89409637,59
+Bob Hope,Burbank,BUR,34.20069885,-118.3590012,60
+Memphis International,Memphis,MEM,35.04240036,-89.97669983,61
+Will Rogers World,Oklahoma City,OKC,35.39310074,-97.60070038,62
+Theodore Francis Green State,Providence,PVD,41.73260117,-71.42040253,63
+Richmond International,Richmond,RIC,37.50519943,-77.31970215,64
+Charleston International,Charleston,CHS,32.89860153,-80.04049683,65
+Reno Tahoe International,Reno,RNO,39.49909973,-119.7679977,66
+Louisville International Standiford Field,Louisville,SDF,38.1744,-85.736,67
+Tucson International,Tucson,TUS,32.11610031,-110.9410019,68
+Spokane International,Spokane,GEG,47.61989975,-117.5339966,69
+Norfolk International,Norfolk,ORF,36.89459991,-76.20120239,70
+Lihue,Lihue,LIH,21.97599983,-159.3390045,71
+Boise Air Terminal/Gowen field,Boise,BOI,43.56439972,-116.2229996,72
+Kona International At Keahole,Kona,KOA,19.73880005,-156.0460052,73
+El Paso International,El Paso,ELP,31.80719948,-106.3779984,74
+Tulsa International,Tulsa,TUL,36.19839859,-95.88809967,75
+Birmingham-Shuttlesworth International,Birmingham,BHM,33.56290054,-86.75350189,76
+Gerald R Ford International,Grand Rapids,GRR,42.88079834,-85.52279663,77
+Albany International,Albany,ALB,42.74829865,-73.80169678,78
+Long Beach /Daugherty Field,Long Beach,LGB,33.81769943,-118.1520004,79
+Orlando Sanford International,Sanford,SFB,28.77759933,-81.23750305,80
+Greater Rochester International,Rochester,ROC,43.1189003,-77.67240143,81
+Des Moines International,Des Moines,DSM,41.5340004,-93.6631012,82
+James M Cox Dayton International,Dayton,DAY,39.90240097,-84.2193985,83
+Manchester,Manchester,MHT,42.93259811,-71.43569946,84
+Syracuse Hancock International,Syracuse,SYR,43.11119843,-76.10630035,85
+Savannah Hilton Head International,Savannah,SAV,32.12760162,-81.20210266,86
+Bill and Hillary Clinton National Airport/Adams Field,Little Rock,LIT,34.72940063,-92.22429657,87
+Greenville Spartanburg International,Greenville,GSP,34.89569855,-82.21890259,88
+Palm Springs International,Palm Springs,PSP,33.82970047,-116.5070038,89
+Myrtle Beach International,Myrtle Beach,MYR,33.67969894,-78.92829895,90
+Portland International Jetport,Portland,PWM,43.64619827,-70.30930328,91
+McGhee Tyson,Knoxville,TYS,35.81100082,-83.9940033,92
+Piedmont Triad International,Greensboro,GSO,36.09780121,-79.93730164,93
+Dane County Regional Truax Field,Madison,MSN,43.13990021,-89.33750153,94
+St Petersburg Clearwater International Airport,St Petersburg,PIE,27.91020012,-82.68740082,95
+Pensacola International,Pensacola,PNS,30.47340012,-87.18659973,96
+Wichita Dwight D Eisenhower National,Wichita,ICT,37.64989853,-97.43309784,97
+Akron Canton Regional,Akron,CAK,40.91609955,-81.44219971,98
+Westchester County,White Plains,HPN,41.06700134,-73.70760345,99
+Fresno Yosemite International,Fresno,FAT,36.77619934,-119.7180023,100

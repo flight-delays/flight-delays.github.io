@@ -74,114 +74,130 @@
     }
 /*loader codes end*/
 
-.grayOut{
-	background-color:#333;
-	opacity:0.5;
-	position:absolute;
-	top:0%;
-	left:0%;
-	width:100%;
-	height:100%;
+.defaultL{
+	width:180%;
 }
 
-span.OverviewBoxTitle{
-	/*position:relative;*/
-	/*left:28%;*/
-	text-align:center;
-	font-size: 25px;
-	font-weight:bold;
+#DelayMinutes{
+	margin-top:5%;
+}
+
+#main-element{
+	font-family:Gill Sans MT;
 }
 
 span a{
 	color:white;
 }
 
+ul li:hover{
+	background:linear-gradient(#005b96,#6497b1);
+}
+
+.menu-Button{
+	left:-20%;
+}
+
+.OverviewBoxTitle{
+	text-align:center;
+	font-size: 25px;
+	font-weight:bold;
+}
+
 .OverviewBox{
-	/*background-image:url('../img/boeing.jpg');*/
-	background:linear-gradient(#5fbfef,#519adb);
+	background:linear-gradient(#b3cde0,#6497b1);
+	/*background:linear-gradient(#5fbfef,#519adb);*/
 	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
 	padding:15px;
 	font-family:Gill Sans MT;
 	font-size:20px;
 	position:absolute;
+	/*position:absolute;*/
 	/*z-index:2932939239293923;*/
 	top:30%;
 	left:30%;
-	width:50%;
-	height:32%;
 	border-radius:25px;
 }
 
-.OverviewButton{
-	/*position:relative;*/
-	/*top:65%;*/
-	/*left:38%;*/
-	width:100%;
-	height:10%;
-	font-size:15px;
-	font-weight:bold;
+.OverviewContent{
+	margin:2%;
 }
 
 .ContactBox{
-	background:linear-gradient(#5fbfef,#519adb);
+	background:linear-gradient(#b3cde0,#6497b1);
+	/*background:linear-gradient(#5fbfef,#519adb);*/
 	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
 	padding:15px;
 	font-family:Gill Sans MT;
 	/*font-size:20px;*/
-	position:absolute;
+	/*position:absolute;*/
 	top:6%;
 	left:30%;
-	width:55%;
-	height:90%;
+	width:52%;
 	border-radius:25px;
 }
 
-.ContactButton{
-	position:relative;
-	top:-6%;
-	left:43%;
-	width:30%;
-	height:5%;
-	font-size:15px;
+.TutorialBoxTitle{
+	text-align:center;
+	font-size: 25px;
 	font-weight:bold;
 }
 
 .TutorialBox{
-	background:linear-gradient(#5fbfef,#519adb);
+	background:linear-gradient(#b3cde0,#6497b1);
+	/*background:linear-gradient(#5fbfef,#519adb);*/
 	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
 	padding:15px;
 	font-family:Gill Sans MT;
 	/*font-size:20px;*/
-	position:absolute;
+	/*position:absolute;*/
 	top:25%;
 	left:35%;
 	width:40%;
-	height:50%;
 	border-radius:25px;
 }
 
-.TutorialButton{
-	position:relative;
-	top:80%;
-	width:100%;
-	height:10%;
-	font-size:15px;
-	font-weight:bold;
+#myModal1{
+	left:15%;
+	top:30%;
 }
 
-.footerDiv{
-	position:absolute;
-	top:15%;
-	margin-left:4%;
-	color:white;
+#myModal2{
+	left:10%;
+	top:-3%;
+	/*padding:-2%;*/
 }
 
-.foot-button1{
-	cursor:pointer;
+#myModal3{
+	left:15%;
+	top:20%;
+}
+
+/*hide all the airline icon images by default*/
+.IconImage{
+    height: auto;
+    width:auto;
+    max-height: 50px;
+    max-width:50px;
+}
+
+#airlineTable{
+	border-top:none;
+}
+
+#airlineTable td{
+	text-align:right;
+    height: 100%;
+    vertical-align: middle;
+    border-top:0px;
+}
+
+#navbar{
+	margin-bottom:0;
 }
 
 .navbar-brand{
-	position:absolute;
+	position:relative;
 	/*left:0.5%;*/
 }
 
@@ -192,98 +208,109 @@ span a{
 }
 
 .container1{
-	/*background:linear-gradient(#2b669a,#2F3034);*/
-	background:linear-gradient(#0a84c1,#2b669a);
+	background:linear-gradient(#6497b1,#005b96);
+	/*background:linear-gradient(#555555,#333333);*/
+	/*background:linear-gradient(#0a84c1,#2b669a);*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.navbar-button{
-	font-family:Gill Sans MT;
-	font-size:20px;
-	position:absolute;
-	left:-60%;
-	cursor:pointer;
-}
-
-#navbar-list-group{
-	height:10%;
-	min-width: 100px !important;
-	width: 100px;
-	z-index:2932939239293923;
-	margin:0px;
-	padding:0px;
-}
-
 .container-footer{
-	position:absolute;
-	bottom:0px;
-	width:100%;
-	height:3%;
-	font-family:Gill Sans MT;
-	background:linear-gradient(#0a84c1,#2b669a);
+	/*position:relative;*/
+	/*bottom:0px;*/
+	/*width:100%;*/
+	/*height:5%;*/
+	background:linear-gradient(#6497b1,#005b96);
+	/*background:linear-gradient(#555555,#333333);*/
+	/*background:linear-gradient(#0a84c1,#2b669a);*/
 }
 
-.foot-button{
-	position:absolute;
-	color:black;
-	top:15%;
-	left:3%;
+.footerDiv1{
+	margin-top:-43%;
 	color:white;
+	left:90%;
+}
+
+.footerDiv2{
+	margin-top:-30%;
+	color:white;
+	left:120%;
 }
 
 .pull-middle{
-	position:absolute;
-	top:15%;
-	left:36%
+	margin-left:40%;
 }
 
-.control-panel{
-	position:absolute;
-	width:19%;
-	height:100%;
-	left:0%;
-	background:linear-gradient(#5fbfef,#519adb);
+#side-panel{
+	/*position:absolute;*/
+	/*width:19%;*/
+	/*height:100%;*/
+	/*left:0%;*/
+	/*float:left;*/
+	/*width:20%;*/
+	/*background:linear-gradient(#D3D3D3,gray);*/
+	border-left:solid;
+	border-right:solid;
+	border-width:1px;
+	border-color:#d3d3d3;
+	display:inline-block;
+	padding:0.58%;
+	padding-left:1%;
+	/*background:linear-gradient(#b3cde0,#6497b1);*/
+	/*background:linear-gradient(#999999,#777777);*/
+	/*background:linear-gradient(#5fbfef,#519adb);*/
 	/*background-color: white;*/
 	/*position: absolute;*/
 	/*z-index:1000000002383823;*/
-	/*top: 10%;*/
-	/*left: 100px;*/
 }
 
+#side-panel-right{
+	border-left:solid;
+	border-right:solid;
+	border-width:1px;
+	border-color:#d3d3d3;
+	display:inline-block;
+	padding:0.58%;
+	/*background:linear-gradient(#D3D3D3,gray);*/
+}
+
+/*This is division line styling code for modals*/
 .sexy_line{
-	display:block;
+	/*display:block;*/
+	margin:0px;
     border:none;
     color:#5fbfef;
     height:1px;
     background:#2b669a;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#2b669a), to(#5fbfef));
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+	/*background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(black), to(white));*/
 }
 
-#Division1{
-	position:relative;
-	top:12%;
+/*This is division line styling code for side panels*/
+#sexy_line1{
+	margin-top:10px;
+	margin-bottom:10px;
+	display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }
-
-#Division2{
-	position:relative;
-	top:20%;
+/*
+#checkboxAirline input[type="checkbox"]:checked{
+	background:blue;
 }
-
-#Division3{
-	position:relative;
-	top:36%;
-}
-
-#Division4{
-	position:relative;
-	top:54%;
-}
-
+*/
 h3.title{
 	font-family:Gill Sans MT;
 	font-size:120%;
 	text-align:left;
+	margin-top:5px;
 	/*padding-top:10px;*/
+}
+
+.slider-container{
+	margin-bottom:30px;
 }
 
 /*codes for styling contact window*/
@@ -292,120 +319,54 @@ h3{
 	text-align:center;
 }
 
-.Contact_Title{
-	position:absolute;
-	top:-1%;
-	left:10%;
-	font-family:Gill Sans MT;
-	font-size:100%;
-}
-/*
-.Author_Intro{
-	position:relative;
-	top:9%;	
-	left:80%;
-}
-*/
 .GeneralIntro1{
 	text-align:center;
-	font-size:18px;
+	font-size:20px;
+}
+
+.Contact_Title{
+	text-align:center;
+	font-size:15px;
 }
 
 #Division{
-	position:relative;
-	top:5.5%;
+	margin-top:1%;
 }
 
-.ChrisPic{
+#intro{
+	width:30%;
+	margin-left:5%;
+}
+
+.Intro{
+	text-align:center;
+	margin-top:2%;
+}
+
+.Pic{
 	border-radius:50%
 }
 
-.XinyiPic{
-	border-radius:50%;
-}
-
-.BeichenPic{
-	border-radius:50%;
-}
-
-.Author_Detail{
-	position:absolute;
-	top:10%;
-	left:50%;
-	font-family:Gill Sans MT;
-	font-size:100%;
-}
-
 p.tag{
-	position:relative;
-	font-family:Gill Sans MT;
+	text-align:left;
 	font-size:25px;
 }
 
 p.description{
-	position:relative;
-	font-family:Gill Sans MT;
 	font-size:16px;
 }
 
-p.Describe{
-	font-family:Gill Sans MT;
-	color:black;
-	font-size:16px;
+.Details{
+	width:50%;
+	text-align:justify;
+	margin-top:2%;
 }
 
-.team{
-	position:relative;
-	top:5%;
-	text-align:center;
-}
-
-.Chris{
-	position:relative;
-	left:-13%;
-	width:75%;
-	margin-top:6%;
-	margin-bottom:1%;
-}
-
-.Xinyi{
-	position:relative;
-	left:-13%;
-	width:75%;
-	margin-bottom:1%;
-}
-
-.Beichen{
-	position:relative;
-	left:-13%;
-	width:75%;
-}
-
-.ChrisDetails{
-	position:relative;
-	left:-20%;
-	width:80%;
-	margin-top:5%;
-	margin-bottom:24%;
-}
-
-.XinyiDetails{
-	position:relative;
-	left:-20%;
-	width:80%;
-	margin-bottom:23%;
-}
-
-.BeichenDetails{
-	position:relative;
-	left:-20%;
-	width:80%;
-}
 /*codes for contact window end*/
 
 .resetter{
 	cursor:pointer;
-	position:absolute;
+	/*position:relative;*/
 	border-radius:25px;
 	width:50;
 	height:50;
@@ -416,100 +377,109 @@ p.Describe{
 	cursor: pointer;
 }
 
-.return_default1{
-	top:12%;
-	left:90%;
-}
-
-.return_default2{
-	top:22%;
-	left:90%;
-}
-
-.return_default3{
-	top:40%;
-	left:90%;
-}
-
-.return_default4{
-	top:60%;
-	left:90%;
-}
-
-#search-panel{
+#search-proportion{
 	height:0%;
-	font-family:Gill Sans MT;
 	padding-left:20px;
-	padding-right:18px;
-	position:relative;
-	top:6%;
+	padding-right:20px;
 }
 
+/*
 #proportion-panel{
 	height:0%;
-	font-family:Gill Sans MT;
 	padding-left:20px;
 	padding-right:20px;
-	position:relative;
-	top:12%;
 }
-
+*/
 #time-panel{
 	height:0%;
-	font-family:Gill Sans MT;
 	padding-left:20px;
 	padding-right:20px;
-	position:relative;
-	top:19%;
 }
 
 #delay-panel{
 	height:0%;
-	font-family:Gill Sans MT;
 	padding-left:20px;
 	padding-right:20px;
-	position:relative;
-	top:35%;
 }
 
 #airline-panel{
 	height:0%;
-	font-family:Gill Sans MT;
 	padding-left:20px;
 	padding-right:20px;
-	position:relative;
-	top:53%;
 }
 
 #checkboxAirline{
 	float:left;
-	width:50%;
+	width:45%;
+}
+
+/*styling for submit and reset buttons*/
+.activated{
+	background:linear-gradient(#6497b1,#005b96);
+}
+.activated:hover{
+	background:linear-gradient(#005b96,#6497b1);
+	cursor:pointer;
+}
+.deactivated{
+	background:gray;
+	opacity:0.65;
+}
+.deactivated:hover{
+	cursor:not-allowed;
+}
+
+#submit{
+	position:relative;
+	width:40%;
+}
+
+#return_default{
+	position:relative;
+	width:40%;
+}
+/*styling for submit and reset buttons ends*/
+
+
+/*styling for check-all button*/
+#checkAllBox{
+	background:linear-gradient(#6497b1,#005b96);
 }
 
 #mapDiv{
-	position:absolute;
-	margin-bottom: 20px;
-	top:3%;
-	left:18%;
-	width:82%;
-	height:95%;
+	/*margin-left:20%;*/
+	/*position:absolute;*/
+	/*display:inline-block;*/
+	/*margin-bottom: 20px;*/
+	/*margin-top:-10%;*/
+	/*left:-5%;*/
+	margin-top:1%;
+	background-color: white;
 }
 
 .map{
-	width:100%;
-	height:100%;
+	/*width:100%;*/
+	fill: #7f9db7;
+	overflow:visible;
+	color:black;
+
 }
 
-.states{
+/*.states{
     fill-opacity: 0;
     stroke: #666666;
-    stroke-width: 0.5px;
-}
+	stroke-width: 0.4px;
+	stroke-linecap:round;
+	stroke:rgb(0,0,0,0.6);
+}*/
 
-.regions {
-    stroke:#fcfcfc;
-    stroke-width: 0.5px;
-    stroke-linecap: round;
+.states{
+	fill: #dcdcdc;
+    fill-opacity: 1;
+    stroke: #ffffff;
+	stroke-width: 0.75px;
+	stroke-linecap:round;
+	stroke:rgb(0,0,0,0.6);
 }
 
 #resultsFiltersDiv {
@@ -541,13 +511,31 @@ p.Describe{
 
 .site-footer{
 	display:inline;
-	padding:0.5%;
 }
 
 .arc {
     fill: none;
     stroke: #252525;
-		stroke-opacity: 0.5;
+	stroke-opacity: 0.7;
     stroke-linejoin: round;
     cursor: pointer;
+}
+
+.infolabel {
+    position: absolute;
+    min-height: 20px;
+    min-width: 50px;
+    max-width: 200px;
+    border: solid thin black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    opacity:0.9;
+    padding: 2px 2px;
+    top: -75px;
+    text-align: center;
+}
+
+.h4 {
+  word-wrap: break-word;
 }
